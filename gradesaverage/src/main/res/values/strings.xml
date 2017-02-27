@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GradesAverage</string>
+    <string name="grade_error">Las notas deben estar entre 0 y 5</string>
+    <string name="empty_fields">Hay campos vacíos.\nPor favor ingrese todas las notas</string>
+</resources>

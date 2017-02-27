@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/dimgray"
+    tools:context="com.example.glego.resistorsapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/resistor_p1"
+            android:layout_weight="1.6"
+            android:id="@+id/imageView"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"/>
+            <Button
+                android:text=""
+                android:layout_height="0dp"
+                android:id="@+id/color_1_Button"
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:background="@color/saddlebrown"
+                android:onClick="bandClicked"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/resistor_p2"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.45"
+            android:id="@+id/imageView2" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.27"/>
+            <Button
+                android:id="@+id/color_2_Buton"
+                android:text=""
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black"
+                android:onClick="bandClicked"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.27"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.27"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.27"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/resistor_p3" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.27"/>
+            <Button
+                android:id="@+id/multiplierButton"
+                android:text=""
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="@color/red"
+                android:onClick="bandClicked"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.27"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:src="@drawable/resistor_p4"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.26"/>
+            <Button
+                android:text=""
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/toleranceButton"
+                android:background="@color/goldenrod"
+                android:onClick="bandClicked"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.26"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.55"
+            android:src="@drawable/resistor_p5"/>
+    </LinearLayout>
+
+    <!-- ************************** Resistor Value ***********************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="1dp">
+        <TextView
+            android:id="@+id/valueText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Value\u2126"
+            android:textColor="@color/darkturquoise"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <!-- ********************************************************************* - -->
+    <!-- Tabla de colores -->
+    <LinearLayout style="@style/LinearLayoutStyle">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TABLA DE COLORES"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutStyle"
+        android:background="@color/cadetblue">
+        <TextView style="@style/TextViewStyle"
+            android:text="Color"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="Primera banda"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="Segunda banda"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="Multiplicador"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="Tolerancia"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutStyle"
+        android:background="@color/black">
+        <TextView style="@style/TextViewStyle"
+            android:text="Negro"/>
+        <TextView style="@style/TextViewStyle"
+            android:text=""/>
+        <TextView style="@style/TextViewStyle"
+            android:text="0"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="x1\u2126"/>
+        <TextView style="@style/TextViewStyle"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutStyle"
+        android:background="@color/saddlebrown">
+        <TextView style="@style/TextViewStyle"
+            android:text="Marrón"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="1"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="1"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="x10\u2126"/>
+        <TextView style="@style/TextViewStyle"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutStyle"
+        android:background="@color/red">
+        <TextView style="@style/TextViewStyle"
+            android:text="Rojo"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="2"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="2"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="x100\u2126"/>
+        <TextView style="@style/TextViewStyle"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutStyle"
+        android:background="@color/orangered">
+        <TextView style="@style/TextViewStyle"
+            android:text="Naranja"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="3"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="3"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="x1K\u2126"/>
+        <TextView style="@style/TextViewStyle"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutStyle"
+        android:background="@color/yellow">
+        <TextView style="@style/TextViewStyle"
+            android:text="Amarillo"
+            android:textColor="@color/black"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="4"
+            android:textColor="@color/black"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="4"
+            android:textColor="@color/black"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="x10K\u2126"
+            android:textColor="@color/black"/>
+        <TextView style="@style/TextViewStyle"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutStyle"
+        android:background="@color/green">
+        <TextView style="@style/TextViewStyle"
+            android:text="Verde"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="5"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="5"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="x100K\u2126"/>
+        <TextView style="@style/TextViewStyle"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutStyle"
+        android:background="@color/blue">
+        <TextView style="@style/TextViewStyle"
+            android:text="Azul"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="6"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="6"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="x1M\u2126"/>
+        <TextView style="@style/TextViewStyle"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutStyle"
+        android:background="@color/purple">
+        <TextView style="@style/TextViewStyle"
+            android:text="Violeta"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="7"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="7"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="x10M\u2126"/>
+        <TextView style="@style/TextViewStyle"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutStyle"
+        android:background="@color/gray">
+        <TextView style="@style/TextViewStyle"
+            android:text="Gris"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="8"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="8"/>
+        <TextView style="@style/TextViewStyle"
+            android:text=""/>
+        <TextView style="@style/TextViewStyle"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutStyle"
+        android:background="@color/white">
+        <TextView style="@style/TextViewStyle"
+            android:text="Blanco"
+            android:textColor="@color/black"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="9"
+            android:textColor="@color/black"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="9"
+            android:textColor="@color/black"/>
+        <TextView style="@style/TextViewStyle"
+            android:text=""
+            android:textColor="@color/black"/>
+        <TextView style="@style/TextViewStyle"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LinearLayoutStyle"
+        android:background="@color/goldenrod">
+        <TextView style="@style/TextViewStyle"
+            android:text="Dorado"/>
+        <TextView style="@style/TextViewStyle"
+            android:text=""/>
+        <TextView style="@style/TextViewStyle"
+            android:text=""/>
+        <TextView style="@style/TextViewStyle"
+            android:text="x0.1\u2126"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="±5%"/>
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/LinearLayoutStyle"
+        android:background="@color/silver">
+        <TextView style="@style/TextViewStyle"
+            android:text="Plateado"/>
+        <TextView style="@style/TextViewStyle"
+            android:text=""/>
+        <TextView style="@style/TextViewStyle"
+            android:text=""/>
+        <TextView style="@style/TextViewStyle"
+            android:text="x0.01\u2126"/>
+        <TextView style="@style/TextViewStyle"
+            android:text="±10%"/>
+    </LinearLayout>
+
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true">
+
+        </ListView>
+
+    </RelativeLayout>
+    -->
+</LinearLayout>

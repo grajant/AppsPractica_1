@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Geometric Figures</string>
+    <string name="empty_field">Hay campos vacíos.\nDebe llenar todos los campos para efectuar el cálculo</string>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:orientation="vertical"
+    tools:context="com.example.glego.practica1apps.MainActivity">
+
+    <TextView
+        android:id="@+id/numbersText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="0"
+        android:textSize="28sp"
+        android:gravity="end|center_vertical"
+        android:textColor="@color/black" />
+
+    <LinearLayout style="@style/LayoutsStyle">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/powderblue"
+            android:textSize="30sp"
+            android:text="C"
+            android:onClick="clearButtonClicked"/>
+        <ImageButton style="@style/ButtonsStyle"
+            android:src="@drawable/errase_symbol_50"
+            android:onClick="eraseButtonClicked"/>
+        <Button style="@style/ButtonsStyle"
+            android:text="\u00F7"
+            android:background="@color/lightblue"
+            android:onClick="divideButtonClicked"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LayoutsStyle">
+        <Button style="@style/ButtonsStyle"
+            android:text="7"
+            android:onClick="sevenButtonClicked"/>
+        <Button style="@style/ButtonsStyle"
+            android:text="8"
+            android:onClick="eightButtonClicked"/>
+        <Button style="@style/ButtonsStyle"
+            android:text="9"
+            android:onClick="nineButtonClicked"/>
+        <Button style="@style/ButtonsStyle"
+            android:text="x"
+            android:textSize="20sp"
+            android:background="@color/lightblue"
+            android:onClick="multiplyButtonClicked"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LayoutsStyle">
+        <Button style="@style/ButtonsStyle"
+            android:text="4"
+            android:onClick="fourButtonClicked"/>
+        <Button style="@style/ButtonsStyle"
+            android:text="5"
+            android:onClick="fiveButtonClicked"/>
+        <Button style="@style/ButtonsStyle"
+            android:text="6"
+            android:onClick="sixButtonClicked"/>
+        <Button style="@style/ButtonsStyle"
+            android:text="-"
+            android:background="@color/lightblue"
+            android:onClick="subButtonClicked"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LayoutsStyle">
+        <Button style="@style/ButtonsStyle"
+            android:text="1"
+            android:onClick="oneButtonClicked"/>
+        <Button style="@style/ButtonsStyle"
+            android:text="2"
+            android:onClick="twoButtonClicked"/>
+        <Button style="@style/ButtonsStyle"
+            android:text="3"
+            android:onClick="threeButtonClicked"/>
+        <Button style="@style/ButtonsStyle"
+            android:text="+"
+            android:background="@color/lightblue"
+            android:onClick="addButtonClicked"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/LayoutsStyle">
+        <Button style="@style/ButtonsStyle"
+            android:text="0"
+            android:onClick="zeroButtonClicked"/>
+        <Button style="@style/ButtonsStyle"
+            android:text="."
+            android:onClick="pointButtonClicked"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/lightblue"
+            android:textSize="30sp"
+            android:text="="
+            android:onClick="resultButtonClicked"/>
+
+    </LinearLayout>
+</LinearLayout>

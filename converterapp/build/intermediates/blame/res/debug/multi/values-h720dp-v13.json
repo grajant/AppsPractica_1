@@ -1,0 +1,50 @@
+[
+    {
+        "outputFile": "/home/practi13/Escritorio/Practica1Apps/C:\\Users\\HOME-I\\GoogleDrive\\UdeA\\AndroidProgramming\\Practica1Apps\\converterapp\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 66,
+                    "endOffset": 117
+                },
+                "from": {
+                    "file": "/home/practi13/Escritorio/Practica1Apps/C:\\Users\\HOME-I\\GoogleDrive\\UdeA\\AndroidProgramming\\Practica1Apps\\converterapp\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 66,
+                        "endOffset": 117
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/home/practi13/Escritorio/Practica1Apps/converterapp/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 66,
+                    "endOffset": 117
+                },
+                "from": {
+                    "file": "/home/practi13/Escritorio/Practica1Apps/converterapp/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 66,
+                        "endOffset": 117
+                    }
+                }
+            }
+        ]
+    }
+]

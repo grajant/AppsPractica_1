@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingBottom="1dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.glego.gradesaverage.MainActivity"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/birrete_200"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculador promedio"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+    <EditText style="@style/EditTextStyle"
+        android:id="@+id/practicasET"
+        android:paddingTop="20dp"
+        android:hint="Prácticas (60%)"/>
+    <EditText style="@style/EditTextStyle"
+        android:id="@+id/avanceIET"
+        android:hint="Avance I Proyecto (5%)"/>
+    <EditText style="@style/EditTextStyle"
+        android:id="@+id/avanceIIET"
+        android:hint="Avance II Proyecto (7%)"/>
+    <EditText style="@style/EditTextStyle"
+        android:id="@+id/avanceIIIET"
+        android:hint="Avance III Proyecto (8%)"/>
+    <EditText style="@style/EditTextStyle"
+        android:id="@+id/finalAppET"
+        android:hint="Aplicación final (20%)"/>
+
+    <TextView
+        android:id="@+id/finalGradeET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nota final"
+        android:maxLength="4"
+        android:textSize="17sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular nota final"
+        android:layout_gravity="center"
+        android:onClick="calculateGrade"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        style="@style/Widget.AppCompat.Button" />
+</LinearLayout>

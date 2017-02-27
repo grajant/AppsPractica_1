@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My First App</string>
+    <string name="edit_message">Conversor</string>
+    <string name="edit_pesos">Pesos</string>
+    <string name="edit_dollars">Dollars</string>
+    <string name="button_send">Send</string>
+</resources>

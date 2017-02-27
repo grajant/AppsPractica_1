@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+
+        android:id="@+id/edit_message"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_message"
+        android:textColor="@color/aquamarine"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/colombia_flag"/>
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/usa_flag" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+
+            android:id="@+id/editPesosValue"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_pesos"
+            android:textColor="@color/aquamarine"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:id="@+id/editDollarsValue"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_dollars"
+            android:textColor="@color/aquamarine"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+</LinearLayout>
+

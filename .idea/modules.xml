@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AppsPractica_1.iml" filepath="$PROJECT_DIR$/AppsPractica_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calculatorapp/calculatorapp.iml" filepath="$PROJECT_DIR$/calculatorapp/calculatorapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/converterapp/converterapp.iml" filepath="$PROJECT_DIR$/converterapp/converterapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/geometricfigures/geometricfigures.iml" filepath="$PROJECT_DIR$/geometricfigures/geometricfigures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gradesaverage/gradesaverage.iml" filepath="$PROJECT_DIR$/gradesaverage/gradesaverage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/resistorsapp/resistorsapp.iml" filepath="$PROJECT_DIR$/resistorsapp/resistorsapp.iml" />
+    </modules>
+  </component>
+</project>
